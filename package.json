@@ -1,0 +1,87 @@
+{
+  "name": "simprov-vsc-capturer",
+  "displayName": "SimProv VSC Capturer (Prototype)",
+  "repository": "https://github.com/MosiSimprov/simprov-vsc-capturer",
+  "description": "A prototypical provenance capturer for SimProv.",
+  "version": "1.0.0",
+  "publisher": "MosiSimprov",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:simprov-capturer.NewSimulationStudy",
+    "workspaceContains:**/.study"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "simprov-capturer.NewSimulationStudy",
+        "title": "New Simulation Study",
+        "category": "SimProv"
+      },
+      {
+        "command": "simprov-capturer.NewResearchQuestion",
+        "title": "New Research Question",
+        "category": "SimProv"
+      },
+      {
+        "command": "simprov-capturer.NewAssumption",
+        "title": "New Assumption",
+        "category": "SimProv"
+      },
+      {
+        "command": "simprov-capturer.NewRequirement",
+        "title": "New Requirement",
+        "category": "SimProv"
+      },
+      {
+        "command": "simprov-capturer.NewModel",
+        "title": "New Simulation Model",
+        "category": "SimProv"
+      },
+      {
+        "command": "simprov-capturer.NewExperiment",
+        "title": "New Simulation Experiment",
+        "category": "SimProv"
+      },
+      {
+        "command": "simprov-capturer.NewReference",
+        "title": "New Reference",
+        "category": "SimProv"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.73.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.26.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@types/nunjucks": "^3.2.1",
+    "@types/request": "^2.48.8",
+    "@vscode/vsce": "^2.32.0",
+    "decompress": "^4.2.1",
+    "nunjucks": "^3.2.3",
+    "request": "^2.88.2",
+    "requests": "^0.3.0"
+  }
+}

@@ -1,0 +1,19 @@
+{% if assumptions -%}
+// SIMPROV:Assumptions = {{ assumptions }}
+{%- endif %}
+{% if requirements -%}
+// SIMPROV:Requirements = {{ requirements }}
+{%- endif %}
+{% if researchQuestion -%}
+// SIMPROV:Research Question = {{ researchQuestion }}
+{%- endif %}
+{% if references -%}
+// SIMPROV:References= {{ references }}
+{%- endif %}
+{% if model -%}
+// SIMPROV:Model= {{ model }}
+{%- endif %}
+
+
+
+YOUR SPECIFICATION STARTS HERE!
