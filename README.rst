@@ -53,7 +53,7 @@ Dependencies
 Install and Usage
 -----------------
 
-Just install the  ``simprov-vsc-capturer-0.0.1.vsix`` file from the repository with VSCode.
+Just install the  ``simprov-vsc-capturer-1.0.0.vsix`` file from the repository with VSCode.
 
 Contribute
 ----------
